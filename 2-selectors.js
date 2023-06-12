@@ -22,4 +22,9 @@ if (newPar.classList.contains(`d`)) {
   newPar.classList.add(`yeniClass`);
 }
 
+newPar.classList.toggle(`white`);
+//olmadıgı için white eklendi
+newPar.classList.toggle(`blue`);
+//zaten oldugu için blue çıkarıldı
+
 console.log(newPar);
