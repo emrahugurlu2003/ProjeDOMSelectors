@@ -36,3 +36,21 @@ const tagSecme = document.querySelector(`h1`);
 const classSecme = document.querySelector(`.list`);
 const idSecme = document.querySelector(`#btn`);
 const listeSecme = document.querySelectorAll(`ul li`);
+
+//TRAVERSING: Bir element üzerinden baka bir element ulaşma
+
+//Yukarı yonde traverse: child->parent
+const listYukari = document.querySelector(`li`);
+//ilk li yi buldu, yani HTML yi
+console.log(
+  listYukari.parentElement.parentElement.parentElement.parentElement
+    .parentElement
+);
+//once ul'ye oradan da section'a oradan da maine'e oradan da body'e oradan da html'ye gitti
+//aynısını paretNode ile de yapmak mumkun.
+
+//Aşağı yonde traverse: parent->child
+
+//Yatay yonde traverse : child->child
+
+//Yukarı yonde traverse
