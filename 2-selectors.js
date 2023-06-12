@@ -13,4 +13,7 @@ newPar.setAttribute(`id`, `c`);
 newPar.setAttribute(`class`, `d`);
 
 newPar.classList.add(`bg-tomato`, `left`, `blue`);
+
+newPar.classList.remove(`left`);
+
 console.log(newPar);
