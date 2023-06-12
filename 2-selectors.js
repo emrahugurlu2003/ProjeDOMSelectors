@@ -16,4 +16,10 @@ newPar.classList.add(`bg-tomato`, `left`, `blue`);
 
 newPar.classList.remove(`left`);
 
+if (newPar.classList.contains(`d`)) {
+  console.log(`içeriyormusss`);
+} else {
+  newPar.classList.add(`yeniClass`);
+}
+
 console.log(newPar);
