@@ -27,7 +27,12 @@ itemListArray.forEach((item) => console.log((item.style.color = `purple`)));
 //HTML collection doner bunu array haline çevirmek için 2.YOL
 const itemListSpread = [...itemListArray];
 //doğrudan array oldu
-console.log(itemListSpread);
+//console.log(itemListSpread);
 
 //Şimdi bu array ile oynayalım. orjinali bozmadan manuple edelim
 itemListSpread.map((item) => console.log((item.style.color = `red`)));
+
+const tagSecme = document.querySelector(`h1`);
+const classSecme = document.querySelector(`.list`);
+const idSecme = document.querySelector(`#btn`);
+const listeSecme = document.querySelectorAll(`ul li`);
