@@ -55,8 +55,30 @@ const listYukari = document.querySelector(`li`);
 const listYukari2 = document.querySelector(`li`); /* en başa donelim */
 console.log(listYukari2.closest(`section`));
 
+//---------------------------------------
 //Aşağı yonde traverse: parent->child
+const addItem = document.querySelector(`.add-item`);
+//addItem adlı degiskene section atandı
+console.log(addItem.children);
+//section içinde 3 tane chilren vardı, onları log etti.
+//her bir child ulaşmak için:
+addItem.children[0].style.color = `green`;
+addItem.children[1].style.backgroundColor = `orange`;
+addItem.children[2].style.backgroundColor = `purple`;
+
+//doğrudan ilk ve son elemanlara da gidilebilir.
+addItem.lastElementChild.style.color = `magenta`;
+addItem.firstElementChild.style.color = `magenta`;
 
 //Yatay yonde traverse : child->child
+const ulDegiskeni = document.querySelector(`ul`);
+const listsDegiskeni = ulDegiskeni.children;
+console.log(itemListSpread);
 
-//Yukarı yonde traverse
+const js = listsDegiskeni[2];
+console.log(js);
+
+const a =
+  js.previousElementSibling.previousElementSibling.nextElementSibling
+    .nextElementSibling.nextElementSibling;
+console.log(a);
