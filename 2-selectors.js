@@ -27,4 +27,15 @@ newPar.classList.toggle(`white`);
 newPar.classList.toggle(`blue`);
 //zaten oldugu için blue çıkarıldı
 
+console.log(newPar.getAttribute(`class`));
+//newPar ın class larını istiyorum, getir dedim
+console.log(newPar.getAttribute(`id`));
+//newPar ın id lerini istiyorum, getir dedim
+console.log(newPar.getAttribute(`name`));
+//newPar name lerini  istiyorum, getir dedim
+console.log(newPar.getAttribute(`type`));
+//newPar ın type larını istiyorum, getir dedim
+
+const degisken1 = document.getElementById(`input`);
+console.log(degisken1.value);
 console.log(newPar);
